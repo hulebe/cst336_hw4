@@ -1,0 +1,70 @@
+body {
+  background-color: gray;
+  color:white;
+}
+
+header {
+  color: #0047AB;
+  text-align: center;
+}
+
+nav, footer {
+  text-align: center;
+}
+
+
+nav a { /* links within "nav" container */
+  padding:15px;
+  padding-bottom:4px;
+  font-size: 1.8em;
+  text-decoration: none; /* removes underline*/
+  color: green;
+}
+
+nav a:hover { /*pseudo class*/
+  border-bottom:2px orange solid;
+  font-size: 2em;
+  transition: .9s; /* transition effect */
+}
+
+a:visited {
+  color: orange;
+}
+
+a:active {
+  color: skyblue;
+}
+
+#content {
+  color: black;
+  border: 5px purple solid;
+  padding: 30px;
+  margin: 20px;
+  
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  font-size: .6em;
+  color: black;
+}
+
+table {
+  margin: 0px auto;
+}
+
+ul {
+  width:500px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+h1 {
+  font-family: 'Anton', sans-serif;
+  font-size: 5em;
+  margin-bottom: 10px;
+}
