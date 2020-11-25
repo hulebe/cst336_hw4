@@ -4,12 +4,12 @@ app.engine('html', require('ejs').renderFile);
 app.use(express.static("public"));
 
 //Faker
-const faker = require("faker");
-var randomEmail = faker.internet.email();
+var faker = require("faker");
 
 //routes
 app.get("/", function(req, res){
-    res.render("index.html", {"fakeEmail": randomEmail});
+    var randomEmail = faker.internet.email();
+    res.render("index.html", {"fakeEmail":randomEmail});
 });
 
 app.get("/page2", function(req, res){
