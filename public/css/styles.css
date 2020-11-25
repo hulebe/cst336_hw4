@@ -68,3 +68,8 @@ h1 {
   font-size: 5em;
   margin-bottom: 10px;
 }
+
+#fakeEmail {
+  color: black;
+  text-align:center;
+}

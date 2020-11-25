@@ -5,11 +5,11 @@ app.use(express.static("public"));
 
 //Faker
 const faker = require("faker");
-var randomEmail = faker.internet.email();
+var fakeEmail = faker.internet.email();
 
 //routes
 app.get("/", function(req, res){
-    res.render("index.html", {"randomEmail": randomEmail});
+    res.render("index.html", {"fakeEmail": fakeEmail});
 });
 
 app.get("/page2", function(req, res){
