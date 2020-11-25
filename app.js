@@ -3,9 +3,13 @@ const app = express();
 app.engine('html', require('ejs').renderFile);
 app.use(express.static("public"));
 
+//Faker
+const faker = require("faker");
+var randomEmail = faker.internet.email();
+
 //routes
 app.get("/", function(req, res){
-	res.render("index.html");
+    res.render("index.html", {"randomEmail": randomEmail});
 });
 
 app.get("/page2", function(req, res){
